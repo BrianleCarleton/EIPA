@@ -26,8 +26,8 @@ G = sparse(nx*ny,ny*nx);
             G(n,n) = -4;
             G(n,nxp) = 1;
             G(n,nxm) = 1;
-            G(n,nym) = 1;
-            G(n,nyp) = 1;
+            G(n,n) = 1;
+            G(nyp,n) = 1;
             end           
         end
     end
